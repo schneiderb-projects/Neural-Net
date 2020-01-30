@@ -1,12 +1,13 @@
 # Neural-Net
-Neural Net
-This is a Neural Net I wrote. This code has no main function so go look at my PongAI or LanguageRecognition projects if you wanna see it in action.
+Description: This is a Neural Net I wrote. It implements foward and back propogation using linear algebra. 
+
+Note: This code has no main function. Go look at my PongAI or LanguageRecognition projects if you want to see it in action.
 
 I am currently trying to add more hidden layers, but am having a problem with the back propogation. 
 
 What each file/class is: 
 
-NeuralNet: This is the meat and potatoes of the project. It is where the actual implementation of the neural net is. The foward and back propogation equations as well as the arrays for the weights and biases are stored all stored in this file. All the other files except MatrixMath are just to make the Neural Net easier to use.
+NeuralNet: This is the meat and potatoes of the project. It is where the actual implementation of the neural net is. The foward and back propogation equations as well as the arrays for the weights and biases are all stored here. All the other files except MatrixMath are just to make the Neural Net easier to use.
 
 MatrixMath: This file contains all of the Linear Algebra used in the NeuralNet file. This includes regular operations as well as activation functions and randomization.
 
@@ -16,6 +17,6 @@ FileManager: Saves and loads the neural net in its current state. It can save it
 
 Parse: The Parse class is an abstract class which is used by a NeuralNetDriver to parse your input into some binary format and vica versa. Follow the JavaDoc to see exactly how data should be parsed.
 
-IOManager: Also an abstract class. NeuralNetDriver uses to ask for input and send output info for display. This allows you to display proejects using the console or a GUI or anything else you want.
+IOManager: Also an abstract class. NeuralNetDriver uses this class to ask for input and send output info for display. This allows you to display projects using the console or a GUI or anything else you want.
 
-IOConsole: IOConsole is child of the IOManager class and provides an IOManager for applications that just need the console to get and display info.
+IOConsole: IOConsole is a child of the IOManager class and provides an IOManager for applications that just need the console to get and display info.
